@@ -10,7 +10,7 @@
 
 <script>
     export default {
-        name: "Login",
+        name: 'Login',
         data(){
           return{
             loginForm:{
@@ -28,8 +28,8 @@
                     password:this.loginForm.password
                 })
                 .then(success=>{
-                    if (success.data.code==200){
-                       this.$router.replace({path:"/index"});
+                    if (success.data.success == true){
+                       this.$router.replace({path:'/index'});
                     }
                 })
                 .catch(fail=>{

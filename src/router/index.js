@@ -19,7 +19,7 @@ export default new Router({
       component: Login
     },
     {
-      path: '/idnex',
+      path: '/index',
       name: 'AppIndex',
       component: AppIndex
     }
