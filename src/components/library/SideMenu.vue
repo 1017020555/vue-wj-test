@@ -1,7 +1,7 @@
 <template>
   <el-menu
     class="categories"
-    :default-active="$route.path"
+    default-active="0"
     @select="handleSelect"
     active-text-color="red">
     <el-menu-item index="0">
@@ -38,20 +38,15 @@
 <script>
     export default {
         name: "SideMenu",
-      methods: {
-        handleSelect(key, keyPath) {
-          console.log(key, keyPath);
+        methods: {
+          handleSelect(key, keyPath) {
+            // console.log(key, keyPath);
+            // console.log($route.path)
+          }
         }
-      }
     }
 </script>
 
 <style scoped>
-  .categories {
-    position: fixed;
-    margin-left: 50%;
-    left: -600px;
-    top: 100px;
-    width: 150px;
-  }
+
 </style>
