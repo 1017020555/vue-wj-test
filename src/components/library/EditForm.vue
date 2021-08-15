@@ -13,7 +13,9 @@
           <el-input v-model="form.author" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="出版日期" :label-width="formLabelWidth" prop="date">
-          <el-input v-model="form.date" autocomplete="off"></el-input>
+<!--          <el-input v-model="form.date" autocomplete="off"></el-input>-->
+          <el-date-picker v-model="form.date" type="date"  value-format="yyyy-MM-dd"  placeholder="选择日期">
+          </el-date-picker>
         </el-form-item>
         <el-form-item label="出版社" :label-width="formLabelWidth" prop="press">
           <el-input v-model="form.press" autocomplete="off"></el-input>
